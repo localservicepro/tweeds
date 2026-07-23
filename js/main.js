@@ -28,6 +28,37 @@
     a.addEventListener('click', closeMenu);
   });
 
+  // Services dropdown: caret toggles the submenu (mobile tap + keyboard/click)
+  var carets = document.querySelectorAll('.drop-caret');
+  carets.forEach(function (btn) {
+    var item = btn.closest('.has-drop');
+    btn.addEventListener('click', function (e) {
+      e.preventDefault();
+      e.stopPropagation();
+      var isOpen = item.classList.toggle('open');
+      btn.setAttribute('aria-expanded', isOpen);
+      document.querySelectorAll('.has-drop.open').forEach(function (o) {
+        if (o !== item) { o.classList.remove('open'); var b = o.querySelector('.drop-caret'); if (b) b.setAttribute('aria-expanded', 'false'); }
+      });
+    });
+  });
+  document.addEventListener('click', function (e) {
+    document.querySelectorAll('.has-drop.open').forEach(function (o) {
+      if (!o.contains(e.target)) {
+        o.classList.remove('open');
+        var b = o.querySelector('.drop-caret'); if (b) b.setAttribute('aria-expanded', 'false');
+      }
+    });
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') {
+      document.querySelectorAll('.has-drop.open').forEach(function (o) {
+        o.classList.remove('open');
+        var b = o.querySelector('.drop-caret'); if (b) b.setAttribute('aria-expanded', 'false');
+      });
+    }
+  });
+
   // Reveal on scroll
   var reveals = document.querySelectorAll('.reveal');
   if ('IntersectionObserver' in window && reveals.length) {
