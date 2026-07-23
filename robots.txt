@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.tweedpropertymaintenance.com.au/sitemap.xml
