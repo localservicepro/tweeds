@@ -47,6 +47,7 @@ h3{font-weight:800;font-size:1.32rem}
 /* NAV */
 .nav{position:fixed;inset:0 0 auto 0;z-index:60;transition:.3s;padding:14px 0}
 .nav.scrolled,.nav.solid{background:rgba(255,255,255,.92);backdrop-filter:blur(14px);box-shadow:var(--shadow-s);padding:8px 0}
+body.menu-open .nav{backdrop-filter:none;-webkit-backdrop-filter:none}
 .nav .wrap{display:flex;align-items:center;gap:26px}
 .brand{display:flex;align-items:center;gap:12px;font-family:var(--display);font-weight:800;text-transform:uppercase;font-size:1.02rem;color:#fff;letter-spacing:.02em;line-height:1.05}
 .nav.scrolled .brand,.nav.solid .brand{color:var(--ink)}
@@ -319,9 +320,6 @@ body.menu-open .navtoggle span:nth-child(3){top:22px;transform:rotate(-45deg)}
 .reveal.visible{opacity:1;transform:none}
 .reveal.d1{transition-delay:.08s}.reveal.d2{transition-delay:.16s}.reveal.d3{transition-delay:.24s}.reveal.d4{transition-delay:.32s}
 
-/* Floating mobile call bar */
-.callbar{position:fixed;left:0;right:0;bottom:0;z-index:55;display:none;gap:10px;padding:10px 14px;background:rgba(8,23,43,.96);backdrop-filter:blur(10px);border-top:1px solid rgba(255,255,255,.08)}
-.callbar .btn{flex:1;justify-content:center;padding:13px 10px;font-size:.85rem}
 
 @media(prefers-reduced-motion:reduce){
   *{animation:none!important;scroll-behavior:auto}
@@ -358,8 +356,6 @@ body.menu-open .navtoggle span:nth-child(3){top:22px;transform:rotate(-45deg)}
   .dropdown b{font-size:.82rem}
   .navmask{position:fixed;inset:0;background:rgba(8,23,43,.5);opacity:0;pointer-events:none;transition:.3s;z-index:59}
   body.menu-open .navmask{opacity:1;pointer-events:auto}
-  .callbar{display:flex}
-  body{padding-bottom:0}
 }
 @media(max-width:600px){
   .sgrid,.steps,.gallery,.rel,.vgrid,.stats,.checklist,.wgrid,.fgrid{grid-template-columns:1fr}
