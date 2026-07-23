@@ -221,6 +221,24 @@ body.menu-open .navtoggle span:nth-child(3){top:22px;transform:rotate(-45deg)}
 .field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--blue);box-shadow:0 0 0 3px rgba(12,111,208,.12)}
 .form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
 
+/* Contact hero with inline quote form + info/map row */
+.contact-hero{padding:150px 0 90px}
+.contact-hero .wrap{max-width:var(--maxw);display:grid;grid-template-columns:1.02fr .98fr;gap:50px;align-items:center}
+.contact-hero .chero-text{max-width:560px}
+.contact-hero .qcard{margin:0}
+.cinfo-map{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:stretch;margin-top:44px}
+.cinfo-map .mapframe{height:100%;min-height:360px}
+@media(max-width:960px){
+  .contact-hero{padding:94px 0 44px}
+  .contact-hero .wrap{grid-template-columns:1fr;gap:20px}
+  .contact-hero h1{font-size:1.72rem;margin:12px 0 12px}
+  .contact-hero .chero-text p{font-size:1rem;margin-bottom:2px}
+  .contact-hero .chero-text .hero-ctas{display:none}
+  .cinfo-map{grid-template-columns:1fr;gap:24px}
+  .cinfo-map .mapframe{min-height:300px}
+}
+
+
 /* Section heading helper */
 .sec-head{text-align:center;max-width:760px;margin:0 auto}
 .sec-head h2{margin:15px 0 16px}
