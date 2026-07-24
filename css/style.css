@@ -375,4 +375,11 @@ body.menu-open .navtoggle span:nth-child(3){top:22px;transform:rotate(-45deg)}
   .hero-ctas{margin:24px 0 26px}
   .chips{display:grid;grid-template-columns:1fr 1fr;gap:8px}
   .chip{text-align:center;font-size:.76rem;padding:9px 8px}
+  /* contact rows: wrap long values (email) so nothing runs off-screen */
+  .crow{gap:12px;padding:14px 0}
+  .crow .ic{width:38px;height:38px}
+  .crow a,.crow span{font-size:.92rem;overflow-wrap:anywhere;word-break:break-word;min-width:0}
+  .crow>div:last-child{min-width:0;flex:1}
+  .cinfo-map{margin-top:32px;gap:20px}
+  .locbtns .btn{flex:1;justify-content:center}
 }
