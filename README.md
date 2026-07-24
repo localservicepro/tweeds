@@ -7,7 +7,7 @@ Shire. Built as clean, semantic, Webflow-friendly HTML/CSS/JS with no build step
 ## Live business details
 
 - **Business:** Tweed Property Maintenance
-- **Address:** 8 William Street, Murwillumbah NSW 2484
+- **Address:** Murwillumbah NSW 2484
 - **Phone:** 0448 287 547 (`+61448287547`)
 - **Email:** info@tweedpropertymaintenance.com.au
 - **Domain:** tweedpropertymaintenance.com.au
