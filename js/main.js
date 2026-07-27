@@ -97,18 +97,6 @@
     counters.forEach(function (el) { cio.observe(el); });
   }
 
-  // Quote form (front-end demo handler — connect to Formspree/Webflow forms on launch)
-  window.sendQuote = function (e) {
-    e.preventDefault();
-    var f = e.target;
-    var b = f.querySelector('button[type=submit]');
-    var t = b.textContent;
-    b.textContent = "✓ Request Sent — We'll Be In Touch!";
-    b.style.background = 'var(--ink)';
-    f.querySelectorAll('input,select,textarea').forEach(function (i) { i.value = ''; });
-    setTimeout(function () { b.textContent = t; b.style.background = ''; }, 4000);
-    return false;
-  };
 
   // Footer year
   var y = document.getElementById('yr');

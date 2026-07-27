@@ -413,14 +413,15 @@
         <div><b>Website</b><span>www.tweedpropertymaintenance.com.au</span></div>
       </div>
     </div>
-    <form class="qcard reveal" onsubmit="return sendQuote(event)">
+    <form class="qcard reveal" action="thank-you.html" method="get">
       <h2>Send Your Job Through</h2>
       <p>Fill this in and we'll come back to you with a free quote — usually the same day.</p>
       <div class="field"><label for="cname">Full name</label><input id="cname" name="name" type="text" required placeholder="Your name"></div>
       <div class="field"><label for="cphone">Phone</label><input id="cphone" name="phone" type="tel" required placeholder="04xx xxx xxx"></div>
       <div class="field"><label for="cemail">Email</label><input id="cemail" name="email" type="email" placeholder="you@email.com"></div>
+      <div class="field"><label for="caddr">Property address</label><input id="caddr" name="address1" type="text" placeholder="Street &amp; suburb"></div>
       <div class="field"><label for="cserv">Service needed</label>
-        <select id="cserv" name="service" required>
+        <select id="cserv" name="service_needed" required>
           <option value="">Choose a service…</option>
           <option>Lawn Mowing &amp; Garden Care</option>
           <option>Pressure Washing</option>
@@ -429,7 +430,7 @@
           <option>Multiple services / full property tidy-up</option>
         </select>
       </div>
-      <div class="field"><label for="cmsg">Tell us about the job</label><textarea id="cmsg" name="message" rows="4" placeholder="Suburb, property type, and what needs doing…"></textarea></div>
+      <div class="field"><label for="cmsg">Tell us about the job</label><textarea id="cmsg" name="job_notes" rows="4" placeholder="Property type and what needs doing…"></textarea></div>
       <button class="btn btn-primary" type="submit" style="width:100%;justify-content:center">Send My Request</button>
     </form>
   </div>
@@ -483,5 +484,6 @@
 
 
 <script src="js/main.js" defer></script>
+<script src="https://link.msgsndr.com/js/external-tracking.js" data-tracking-id="tk_fec08a948e0848a5a87717c8cf63cb0a"></script>
 </body>
 </html>
