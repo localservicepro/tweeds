@@ -38,11 +38,13 @@ Shire. Built as clean, semantic, Webflow-friendly HTML/CSS/JS with no build step
 ├── handyman-services-murwillumbah-tweed-heads.html
 ├── about.html
 ├── contact.html
-├── css/style.css        # shared brand kit (design tokens + components)
-├── js/main.js           # sticky nav, mobile menu, scroll reveal, count-up, form
-├── assets/logo.jpg      # brand logo (used in nav, footer, favicon, schema)
+├── css/style.css             # shared brand kit (design tokens + components)
+├── js/main.js                # sticky nav, mobile menu, scroll reveal, count-up, form
+├── js/speed-insights.js      # Vercel Speed Insights tracking
+├── assets/logo.jpg           # brand logo (used in nav, footer, favicon, schema)
 ├── robots.txt
-└── sitemap.xml
+├── sitemap.xml
+└── package.json              # npm dependencies (@vercel/speed-insights)
 ```
 
 ## Design system / brand kit
@@ -82,6 +84,17 @@ python3 -m http.server 8000
 # open http://localhost:8000
 ```
 
+## Performance Monitoring
+
+Vercel Speed Insights is integrated to track Core Web Vitals and performance metrics:
+
+- **Script:** `js/speed-insights.js` — initializes the Speed Insights queue and injects the Vercel tracking script
+- **Integration:** Added to all 8 HTML pages in the `<head>` section
+- **Activation:** Enable Speed Insights in your Vercel project dashboard
+- **Data:** Metrics appear in the Vercel dashboard after deployment and user visits
+
+The script loads `/_vercel/speed-insights/script.js` which is automatically served by Vercel when Speed Insights is enabled for the project.
+
 ## Notes for launch
 
 - Images currently use free Pexels photos (the images approved in the homepage
@@ -89,3 +102,4 @@ python3 -m http.server 8000
   suburb + service alt text pattern (e.g. "pressure washing driveway Tweed Heads").
 - Connect Google Analytics 4 + Search Console and submit `sitemap.xml`.
 - Create/verify the Google Business Profile and keep NAP identical to this site.
+- **Enable Speed Insights** in the Vercel project dashboard to start tracking performance metrics.

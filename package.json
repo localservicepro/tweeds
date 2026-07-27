@@ -1,0 +1,14 @@
+{
+  "name": "tweed-property-maintenance",
+  "version": "1.0.0",
+  "description": "Tweed Property Maintenance website",
+  "type": "module",
+  "scripts": {
+    "build": "node build.js"
+  },
+  "dependencies": {
+    "@vercel/speed-insights": "^1.0.12"
+  },
+  "devDependencies": {},
+  "private": true
+}
