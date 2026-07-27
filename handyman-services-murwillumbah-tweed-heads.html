@@ -224,7 +224,7 @@
         <a href="contact.html">Cabarita</a>
       </div>
     </div>
-    <form class="qcard reveal" id="quote" onsubmit="return sendQuote(event)">
+    <form class="qcard reveal" id="quote" action="thank-you.html" method="get">
       <h2>Get a Free Quote</h2>
       <p>Tell us about the job and we'll come back with a free quote — usually the same day.</p>
       <div class="form-row">
@@ -233,9 +233,9 @@
       </div>
       <div class="field"><label for="cemail">Email</label><input id="cemail" name="email" type="email" placeholder="you@email.com"></div>
       <div class="form-row">
-        <div class="field"><label for="csuburb">Suburb</label><input id="csuburb" name="suburb" type="text" placeholder="e.g. Kingscliff"></div>
+        <div class="field"><label for="csuburb">Property address</label><input id="csuburb" name="address1" type="text" placeholder="Street &amp; suburb"></div>
         <div class="field"><label for="cserv">Service needed</label>
-          <select id="cserv" name="service" required>
+          <select id="cserv" name="service_needed" required>
             <option>Lawn Mowing &amp; Garden Care</option>
             <option>Pressure Washing</option>
             <option>Window Cleaning</option>
@@ -244,7 +244,7 @@
           </select>
         </div>
       </div>
-      <div class="field"><label for="cmsg">Tell us about the job</label><textarea id="cmsg" name="message" rows="3" placeholder="Property type and what needs doing…"></textarea></div>
+      <div class="field"><label for="cmsg">Tell us about the job</label><textarea id="cmsg" name="job_notes" rows="3" placeholder="Property type and what needs doing…"></textarea></div>
       <button class="btn btn-primary" type="submit" style="width:100%;justify-content:center">Send My Request</button>
     </form>
   </div>
@@ -370,5 +370,6 @@
 
 
 <script src="js/main.js" defer></script>
+<script src="https://link.msgsndr.com/js/external-tracking.js" data-tracking-id="tk_fec08a948e0848a5a87717c8cf63cb0a"></script>
 </body>
 </html>
