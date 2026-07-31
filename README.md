@@ -19,10 +19,10 @@ Shire. Built as clean, semantic, Webflow-friendly HTML/CSS/JS with no build step
 | --- | --- | --- |
 | `index.html` | Homepage | Property Maintenance Tweed Heads |
 | `services.html` | Services overview | Property maintenance services Tweed Shire |
-| `lawn-mowing-garden-care-murwillumbah.html` | Service page | Lawn Mowing Murwillumbah |
-| `pressure-washing-tweed-heads.html` | Service page | Pressure Washing Tweed Heads |
-| `window-cleaning-kingscliff-tweed-coast.html` | Service page | Window Cleaning Kingscliff |
-| `handyman-services-murwillumbah-tweed-heads.html` | Service page | Handyman Murwillumbah & Tweed Heads |
+| `lawn-garden-care.html` | Service page | Lawn Mowing Murwillumbah |
+| `pressure-washing.html` | Service page | Pressure Washing Tweed Heads |
+| `window-cleaning.html` | Service page | Window Cleaning Kingscliff |
+| `handyman.html` | Service page | Handyman Murwillumbah & Tweed Heads |
 | `about.html` | About | Local Tweed Shire property maintenance |
 | `contact.html` | Contact / quote | Free property maintenance quote |
 
@@ -32,10 +32,10 @@ Shire. Built as clean, semantic, Webflow-friendly HTML/CSS/JS with no build step
 /
 ├── index.html
 ├── services.html
-├── lawn-mowing-garden-care-murwillumbah.html
-├── pressure-washing-tweed-heads.html
-├── window-cleaning-kingscliff-tweed-coast.html
-├── handyman-services-murwillumbah-tweed-heads.html
+├── lawn-garden-care.html
+├── pressure-washing.html
+├── window-cleaning.html
+├── handyman.html
 ├── about.html
 ├── contact.html
 ├── css/style.css        # shared brand kit (design tokens + components)

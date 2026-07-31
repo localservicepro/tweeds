@@ -1,9 +1,14 @@
 {
+  "cleanUrls": true,
   "trailingSlash": false,
   "redirects": [
-    { "source": "/thank-you.html", "destination": "/thank-you", "permanent": true }
-  ],
-  "rewrites": [
-    { "source": "/thank-you", "destination": "/thank-you.html" }
+    { "source": "/lawn-mowing-garden-care-murwillumbah.html", "destination": "/lawn-garden-care", "permanent": true },
+    { "source": "/lawn-mowing-garden-care-murwillumbah", "destination": "/lawn-garden-care", "permanent": true },
+    { "source": "/pressure-washing-tweed-heads.html", "destination": "/pressure-washing", "permanent": true },
+    { "source": "/pressure-washing-tweed-heads", "destination": "/pressure-washing", "permanent": true },
+    { "source": "/window-cleaning-kingscliff-tweed-coast.html", "destination": "/window-cleaning", "permanent": true },
+    { "source": "/window-cleaning-kingscliff-tweed-coast", "destination": "/window-cleaning", "permanent": true },
+    { "source": "/handyman-services-murwillumbah-tweed-heads.html", "destination": "/handyman", "permanent": true },
+    { "source": "/handyman-services-murwillumbah-tweed-heads", "destination": "/handyman", "permanent": true }
   ]
 }
